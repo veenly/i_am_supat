@@ -1,0 +1,41 @@
+<html>
+<head>
+
+<title>My skill</title>
+
+<script type="text/javascript" src="js/jscharts.js"></script>
+
+</head>
+<body>
+
+<div id="graph">Loading graph...</div>
+
+<script type="text/javascript">
+	var myChart = new JSChart('graph', 'bar');
+	myChart.setDataArray([['JAVASCRIPT', 90],['ASP.NET', 80],['PHP', 80],['Crystal Report', 75],['SQL', 85],['JSON/XML', 70],['CSS', 65]]);
+	myChart.colorize(['#6E7F00','#8FA500','#A3BC00','#B7D300','#D1F200','#DDFF00','#EAFF66']);
+	myChart.setSize(600, 300);
+	myChart.setIntervalEndY(100);
+	myChart.setTitle('PROGRAMMING LANGUAGE');
+	myChart.setTitleColor('#10D127');
+	myChart.setGrid(false);
+	myChart.setBarSpacingRatio(50);
+	myChart.setBarValuesColor('#208a02');
+	myChart.setBarOpacity(.5);
+	myChart.setBarBorderColor('#FFFFFF');
+	myChart.setBarSpeed(100);
+	myChart.setAxisReversed(true);
+	myChart.setAxisWidth(1);
+	myChart.setAxisColor('#10D127');
+	myChart.setAxisWidth(1);
+	myChart.setAxisValuesColor('#10D127');
+	myChart.setAxisNameColor('#10D127');
+	myChart.setAxisNameX(' ');
+	myChart.setAxisNameY('%');
+	myChart.setAxisPaddingLeft(100);
+	myChart.set3D(true);
+	myChart.draw();
+</script>
+
+</body>
+</html>
